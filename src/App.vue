@@ -1,7 +1,12 @@
 <template>
+
+<!-- 需要连接adb：D:\Mumu模拟器\MuMu Player 12\shell>adb.exe connect 127.0.0.1:16384
+connected to 127.0.0.1:16384 -->
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
 </template>
+
+
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
