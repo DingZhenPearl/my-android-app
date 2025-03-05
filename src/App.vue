@@ -1,4 +1,9 @@
 <template>
+  <!-- 进行实时调试：npm run build -- --watch
+  nodemon --watch dist --exec "npx cap sync android" 
+  adb.exe connect 127.0.0.1:16384
+   -->
+
   <div id="app">
     <div class="content">
       <router-view />
