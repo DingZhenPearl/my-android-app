@@ -1,31 +1,40 @@
 <template>
-
-<!-- 需要连接adb：D:\Mumu模拟器\MuMu Player 12\shell>adb.exe connect 127.0.0.1:16384
-connected to 127.0.0.1:16384 -->
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <div class="content">
+      <router-view />
+    </div>
+    <TabBar />
+  </div>
 </template>
 
-
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TabBar from './components/TabBar.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TabBar
   }
 }
 </script>
 
 <style>
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+}
+
+.content {
+  padding-bottom: 50px; /* 与底部导航栏高度相同 */
+  min-height: 100%;
+  box-sizing: border-box;
 }
 </style>
